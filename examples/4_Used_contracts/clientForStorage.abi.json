@@ -1,0 +1,66 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "renderHelloWorld1",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"string"}
+			]
+		},
+		{
+			"name": "renderHelloWorld2",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"string"}
+			]
+		},
+		{
+			"name": "store",
+			"inputs": [
+				{"name":"currentStorage","type":"address"},
+				{"name":"val","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "sample1",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"sample1","type":"uint32"}
+			]
+		},
+		{
+			"name": "sample2",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"sample2","type":"uint32"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"sample1","type":"uint32"},
+		{"name":"sample2","type":"uint32"}
+	]
+}
