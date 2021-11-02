@@ -1,0 +1,103 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+				{"name":"_powerProtected","type":"uint8"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "addMilitaryUnit",
+			"inputs": [
+				{"name":"Address","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "delMilitaryUnit",
+			"inputs": [
+				{"name":"Address","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getPowerProtected",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"int256"}
+			]
+		},
+		{
+			"name": "takeAttack",
+			"inputs": [
+				{"name":"addr","type":"address"},
+				{"name":"powerAttack","type":"int256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "powerProtected",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"powerProtected","type":"int256"}
+			]
+		},
+		{
+			"name": "livesCount",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"livesCount","type":"uint8"}
+			]
+		},
+		{
+			"name": "enemy",
+			"inputs": [
+			],
+			"outputs": [
+				{"components":[{"name":"addr","type":"address"},{"name":"powerAttack","type":"int256"}],"name":"enemy","type":"tuple"}
+			]
+		},
+		{
+			"name": "playerAddresses",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"playerAddresses","type":"map(address,uint8)"}
+			]
+		},
+		{
+			"name": "baseAddress",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"baseAddress","type":"address"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"powerProtected","type":"int256"},
+		{"name":"livesCount","type":"uint8"},
+		{"components":[{"name":"addr","type":"address"},{"name":"powerAttack","type":"int256"}],"name":"enemy","type":"tuple"},
+		{"name":"playerAddresses","type":"map(address,uint8)"},
+		{"name":"baseAddress","type":"address"},
+		{"name":"count","type":"uint8"}
+	]
+}
