@@ -1,0 +1,99 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "attack",
+			"inputs": [
+				{"name":"addressEnemy","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getPowerAttack",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"int256"}
+			]
+		},
+		{
+			"name": "getPowerProtected",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"int256"}
+			]
+		},
+		{
+			"name": "getHealth",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"int256"}
+			]
+		},
+		{
+			"name": "takeAttack",
+			"inputs": [
+				{"name":"addr","type":"address"},
+				{"name":"pwrAttack","type":"int256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "sendBooty",
+			"inputs": [
+				{"name":"addr","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "powerAttack",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"powerAttack","type":"int256"}
+			]
+		},
+		{
+			"name": "powerProtected",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"powerProtected","type":"int256"}
+			]
+		},
+		{
+			"name": "health",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"health","type":"int256"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"powerAttack","type":"int256"},
+		{"name":"powerProtected","type":"int256"},
+		{"name":"health","type":"int256"}
+	]
+}
