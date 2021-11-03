@@ -8,17 +8,8 @@ import 'GameObjectInterface.sol';
  contract GameObject is GameObjectInterface {
    
     int public powerProtected;
-    //uint8 public state;
-    uint8 public livesCount;
-    
-    struct Enemy{
-        address addr;
-        int powerAttack;    
-    }
-
-
-
-    Enemy public enemy;
+    uint8 livesCount;
+    mapping(uint8 => address) public playerAddresses;
 
     constructor() public {
         require(tvm.pubkey() != 0, 101);
@@ -35,27 +26,20 @@ import 'GameObjectInterface.sol';
 
     function takeAttack(address addr, int powerAttack) virtual public override{
         tvm.accept();
-        
-        powerProtected = powerAttack - powerProtected;
+        powerProtected = powerProtected - powerAttack;
         if(powerProtected <= 0 ) {
             sendBooty(addr);
         }
     }
 
-    function checkLiveObject() private returns(bool){
-        bool res;
-        if(msg.value > 0) res = true;
-            else res = false;
-    }
+    //function checkDied(address addr) private returns(bool){
+    //    return
+    //}
 
-    function sendBooty(address addr) private {
+    function sendBooty(address addr) public {
         tvm.accept();
         addr.transfer(1, true, 160);
     }
-
-    function clearAddressEnemy() private{
-        tvm.accept();
-        delete enemy;
-    }                       
+                     
     
 }

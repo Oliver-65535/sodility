@@ -4,6 +4,8 @@ pragma AbiHeader expire;
 
 import "MilitaryUnit.sol";
 
+    
+
  contract Warrior is MilitaryUnit {
 
     constructor(BaseStationInterface base, int _powerAttack, int _powerProtected) MilitaryUnit(base) public {

@@ -47,6 +47,14 @@
 			]
 		},
 		{
+			"name": "sendBooty",
+			"inputs": [
+				{"name":"addr","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
 			"name": "powerProtected",
 			"inputs": [
 			],
@@ -55,19 +63,11 @@
 			]
 		},
 		{
-			"name": "livesCount",
+			"name": "playerAddresses",
 			"inputs": [
 			],
 			"outputs": [
-				{"name":"livesCount","type":"uint8"}
-			]
-		},
-		{
-			"name": "enemy",
-			"inputs": [
-			],
-			"outputs": [
-				{"components":[{"name":"addr","type":"address"},{"name":"powerAttack","type":"int256"}],"name":"enemy","type":"tuple"}
+				{"name":"playerAddresses","type":"map(uint8,address)"}
 			]
 		},
 		{
@@ -97,7 +97,7 @@
 		{"name":"_constructorFlag","type":"bool"},
 		{"name":"powerProtected","type":"int256"},
 		{"name":"livesCount","type":"uint8"},
-		{"components":[{"name":"addr","type":"address"},{"name":"powerAttack","type":"int256"}],"name":"enemy","type":"tuple"},
+		{"name":"playerAddresses","type":"map(uint8,address)"},
 		{"name":"powerAttack","type":"int256"},
 		{"name":"bAddress","type":"address"}
 	]
