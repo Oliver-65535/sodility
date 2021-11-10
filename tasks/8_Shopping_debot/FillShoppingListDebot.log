@@ -1,0 +1,17 @@
+Config: default
+Input arguments:
+     tvc: FillShoppingListDebot.tvc
+      wc: None
+    keys: FillShoppingListDebot.keys.json
+init_data: None
+is_update_tvc: None
+
+Seed phrase: "attract sphere puzzle vacuum claim length cupboard language coach mass like trap"
+Raw address: 0:82b1ea49357f1bbea1717adc95c04de7d74ac5f4924420c62d00c948c086a322
+testnet:
+Non-bounceable address (for init): 0QCCsepJNX8bvqFxetyVwE3n10rF9JJEIMYtAMlIwIajIpmo
+Bounceable address (for later access): kQCCsepJNX8bvqFxetyVwE3n10rF9JJEIMYtAMlIwIajIsRt
+mainnet:
+Non-bounceable address (for init): UQCCsepJNX8bvqFxetyVwE3n10rF9JJEIMYtAMlIwIajIiIi
+Bounceable address (for later access): EQCCsepJNX8bvqFxetyVwE3n10rF9JJEIMYtAMlIwIajIn_n
+Succeeded

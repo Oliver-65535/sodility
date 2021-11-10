@@ -1,0 +1,17 @@
+Config: default
+Input arguments:
+     tvc: ShopWalkingDebot.tvc
+      wc: None
+    keys: ShopWalkingDebot.keys.json
+init_data: None
+is_update_tvc: None
+
+Seed phrase: "famous pulse lava defy noodle rich morning find cause conduct rich vehicle"
+Raw address: 0:0986a2432a700708b2bb761b38962f48d2dafce19cc02921e51713a9380b4dc1
+testnet:
+Non-bounceable address (for init): 0QAJhqJDKnAHCLK7dhs4li9I0tr84ZzAKSHlFxOpOAtNwcWJ
+Bounceable address (for later access): kQAJhqJDKnAHCLK7dhs4li9I0tr84ZzAKSHlFxOpOAtNwZhM
+mainnet:
+Non-bounceable address (for init): UQAJhqJDKnAHCLK7dhs4li9I0tr84ZzAKSHlFxOpOAtNwX4D
+Bounceable address (for later access): EQAJhqJDKnAHCLK7dhs4li9I0tr84ZzAKSHlFxOpOAtNwSPG
+Succeeded
