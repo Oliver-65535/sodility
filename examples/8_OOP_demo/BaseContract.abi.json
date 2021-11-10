@@ -1,0 +1,105 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "myPublicFunction",
+			"inputs": [
+				{"name":"v","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "myExternalFunction",
+			"inputs": [
+				{"name":"v","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "myGetParam",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"uint256"}
+			]
+		},
+		{
+			"name": "myGetAddress",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"address"}
+			]
+		},
+		{
+			"name": "checkPrivate",
+			"inputs": [
+				{"name":"v","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "checkExternal",
+			"inputs": [
+				{"name":"v","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "checkInternal",
+			"inputs": [
+				{"name":"v","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "checkPublic",
+			"inputs": [
+				{"name":"v","type":"uint256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "myParam",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"myParam","type":"uint256"}
+			]
+		},
+		{
+			"name": "callerAddress",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"callerAddress","type":"address"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"myParam","type":"uint256"},
+		{"name":"callerAddress","type":"address"}
+	]
+}

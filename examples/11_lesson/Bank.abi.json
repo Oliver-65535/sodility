@@ -1,0 +1,74 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "registerCar",
+			"inputs": [
+				{"name":"carAddress","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "anotherRegist",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "tvmPubkey",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"tvmPubkey","type":"uint256"}
+			]
+		},
+		{
+			"name": "msgPubkey",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"msgPubkey","type":"uint256"}
+			]
+		},
+		{
+			"name": "msgAddress",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"msgAddress","type":"address"}
+			]
+		},
+		{
+			"name": "incomeAddress",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"incomeAddress","type":"address"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"tvmPubkey","type":"uint256"},
+		{"name":"msgPubkey","type":"uint256"},
+		{"name":"msgAddress","type":"address"},
+		{"name":"incomeAddress","type":"address"}
+	]
+}
