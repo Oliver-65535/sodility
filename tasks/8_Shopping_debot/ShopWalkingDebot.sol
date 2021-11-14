@@ -5,7 +5,7 @@ pragma AbiHeader pubkey;
 
 import "ShoppingListDebot.sol";
 
-contract FillShoppingListDebot is ShoppingListDebot {
+contract ShopWalkingDebot is ShoppingListDebot {
     
     
     
